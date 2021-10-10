@@ -1,6 +1,6 @@
 import SwiftUI
 
-@available(macOS 10.15.0, *)
+@available(macOS 10.15.0, iOS 13.0.0, *)
 public struct Shift: ViewModifier {
     
     var direction: Direction
@@ -52,7 +52,7 @@ public struct Shift: ViewModifier {
     }
 }
 
-@available(macOS 10.15, *)
+@available(macOS 10.15, iOS 13.0.0, *)
 extension View {
     func shift(_ direction: Shift.Direction) -> some View {
         modifier(Shift(direction: direction))
