@@ -3,7 +3,7 @@ import SwiftUI
 @available(macOS 10.15.0, iOS 13.0.0, *)
 public struct Shift: ViewModifier {
     
-    var direction: Direction
+    public var direction: Direction
     
     public func body(content: Content) -> some View {
         switch direction {
@@ -42,7 +42,7 @@ public struct Shift: ViewModifier {
         }
     }
     
-    enum Direction {
+    public enum Direction {
         case left
         case right
         case up
